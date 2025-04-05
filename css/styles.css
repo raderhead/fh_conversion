@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #e63946;
+  --secondary-color: #1d3557;
+  --accent-color: #f1faee;
+  --text-color: #333333;
+  --font-main: 'Open Sans', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.8)), url('images/gym-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Additional styles for cards, grids, footer, etc. */
